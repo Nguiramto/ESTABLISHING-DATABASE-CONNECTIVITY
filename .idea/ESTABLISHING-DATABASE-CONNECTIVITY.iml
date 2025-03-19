@@ -8,7 +8,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../mysql-connector-java-8.0.25.jar!/" />
+          <root url="jar://$MODULE_DIR$/../JTattoo-1.6.13.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -17,7 +17,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../JTattoo-1.6.13.jar!/" />
+          <root url="jar://$MODULE_DIR$/../mysql-connector-java-8.0.25.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

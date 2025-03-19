@@ -6,12 +6,33 @@
   </component>
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
+  </component>
+  <component name="DBNavigator.Project.DataExportManager">
+    <export-instructions>
+      <create-header value="true" />
+      <friendly-headers value="false" />
+      <quote-values-containing-separator value="true" />
+      <quote-all-values value="false" />
+      <value-separator value="" />
+      <begin-quote value="&quot;" />
+      <end-quote value="&quot;" />
+      <file-name value="" />
+      <file-location value="" />
+      <scope value="GLOBAL" />
+      <destination value="FILE" />
+      <format value="EXCEL" />
+      <charset value="UTF-8" />
+      <charset value="UTF-8" />
+    </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseAssistantManager">
     <assistants>
       <assistant-state connection-id="c9c48824-0a37-441c-9580-79d46a40e8cb" default-profile-name="" selected-profile-name="" selected-model-name="" assistant-type="GENERIC" selected-action="SHOW_SQL" availability="UNAVAILABLE" acknowledgement="NONE">
+        <messages />
+      </assistant-state>
+      <assistant-state connection-id="67dd4d16-a876-490f-b279-80bde4d397eb" default-profile-name="" selected-profile-name="" selected-model-name="" assistant-type="GENERIC" selected-action="SHOW_SQL" availability="UNAVAILABLE" acknowledgement="NONE">
         <messages />
       </assistant-state>
     </assistants>
@@ -26,20 +47,31 @@
     <connection id="c9c48824-0a37-441c-9580-79d46a40e8cb">
       <console name="Connection" type="STANDARD" schema="MyRestaurantDB" session="Main"><![CDATA[select * from orders;]]></console>
     </connection>
+    <connection id="67dd4d16-a876-490f-b279-80bde4d397eb">
+      <console name="DatabaseConnection" type="STANDARD" schema="restaurantmanagement" session="Main" />
+    </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
-      <object connection-id="c9c48824-0a37-441c-9580-79d46a40e8cb" object-ref="schemas/myrestaurantdb/tables/orders" />
+      <object connection-id="67dd4d16-a876-490f-b279-80bde4d397eb" object-ref="schemas/restaurantmanagement/tables/menu_items" />
+      <object connection-id="67dd4d16-a876-490f-b279-80bde4d397eb" object-ref="schemas/restaurantmanagement/tables/order_items" />
     </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="c9c48824-0a37-441c-9580-79d46a40e8cb" />
+    <connection id="67dd4d16-a876-490f-b279-80bde4d397eb" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="c9c48824-0a37-441c-9580-79d46a40e8cb" dataset="myrestaurantdb.orders" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="c9c48824-0a37-441c-9580-79d46a40e8cb" dataset="myrestaurantdb.transactions" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="c9c48824-0a37-441c-9580-79d46a40e8cb" dataset="myrestaurantdb.activity_log" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="c9c48824-0a37-441c-9580-79d46a40e8cb" dataset="myrestaurantdb.order_items" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="67dd4d16-a876-490f-b279-80bde4d397eb" dataset="restaurantmanagement.menu_items" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="67dd4d16-a876-490f-b279-80bde4d397eb" dataset="restaurantmanagement.order_items" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="67dd4d16-a876-490f-b279-80bde4d397eb" dataset="restaurantmanagement.transactions" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
@@ -64,6 +96,107 @@
           <host value="localhost" />
           <port value="3306" />
           <database value="MyRestaurantDB" />
+          <tns-folder value="" />
+          <tns-profile value="" />
+          <type value="USER_PASSWORD" />
+          <user value="root" />
+          <token-type value="" />
+          <token-config-file value="" />
+          <token-profile value="" />
+          <session-user value="root@localhost" />
+        </database>
+        <properties>
+          <auto-commit value="false" />
+        </properties>
+        <ssh-settings>
+          <active value="false" />
+          <proxy-host value="" />
+          <proxy-port value="22" />
+          <proxy-user value="" />
+          <auth-type value="PASSWORD" />
+          <key-file value="" />
+        </ssh-settings>
+        <ssl-settings>
+          <active value="false" />
+          <certificate-authority-file value="" />
+          <client-certificate-file value="" />
+          <client-key-file value="" />
+        </ssl-settings>
+        <details>
+          <charset value="UTF-8" />
+          <session-management value="true" />
+          <ddl-file-binding value="true" />
+          <database-logging value="true" />
+          <connect-automatically value="true" />
+          <restore-workspace value="true" />
+          <restore-workspace-deep value="false" />
+          <environment-type value="default" />
+          <connectivity-timeout value="30" />
+          <idle-time-to-disconnect value="30" />
+          <idle-time-to-disconnect-pool value="5" />
+          <credential-expiry-time value="10" />
+          <max-connection-pool-size value="7" />
+          <alternative-statement-delimiter value="" />
+        </details>
+        <debugger>
+          <compile-dependencies value="true" />
+          <tcp-driver-tunneling value="false" />
+          <tcp-host-address value="" />
+          <tcp-port-from value="4000" />
+          <tcp-port-to value="4999" />
+          <debugger-type value="ASK" />
+        </debugger>
+        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false" hide-audit-columns="false">
+          <object-filters />
+          <object-type-filter use-master-settings="true">
+            <object-type name="SCHEMA" enabled="true" />
+            <object-type name="USER" enabled="true" />
+            <object-type name="ROLE" enabled="true" />
+            <object-type name="PRIVILEGE" enabled="true" />
+            <object-type name="CHARSET" enabled="true" />
+            <object-type name="TABLE" enabled="true" />
+            <object-type name="VIEW" enabled="true" />
+            <object-type name="MATERIALIZED_VIEW" enabled="true" />
+            <object-type name="NESTED_TABLE" enabled="true" />
+            <object-type name="COLUMN" enabled="true" />
+            <object-type name="INDEX" enabled="true" />
+            <object-type name="CONSTRAINT" enabled="true" />
+            <object-type name="DATASET_TRIGGER" enabled="true" />
+            <object-type name="DATABASE_TRIGGER" enabled="true" />
+            <object-type name="SYNONYM" enabled="true" />
+            <object-type name="SEQUENCE" enabled="true" />
+            <object-type name="PROCEDURE" enabled="true" />
+            <object-type name="FUNCTION" enabled="true" />
+            <object-type name="PACKAGE" enabled="true" />
+            <object-type name="TYPE" enabled="true" />
+            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
+            <object-type name="ARGUMENT" enabled="true" />
+            <object-type name="JAVA_CLASS" enabled="true" />
+            <object-type name="JAVA_INNER_CLASS" enabled="true" />
+            <object-type name="JAVA_FIELD" enabled="true" />
+            <object-type name="JAVA_METHOD" enabled="true" />
+            <object-type name="DIMENSION" enabled="true" />
+            <object-type name="CLUSTER" enabled="true" />
+            <object-type name="DBLINK" enabled="true" />
+            <object-type name="CREDENTIAL" enabled="true" />
+            <object-type name="AI_PROFILE" enabled="true" />
+          </object-type-filter>
+        </object-filters>
+      </connection>
+      <connection id="67dd4d16-a876-490f-b279-80bde4d397eb" active="true" signed="true">
+        <database>
+          <name value="DatabaseConnection" />
+          <description value="" />
+          <database-type value="MYSQL" />
+          <config-type value="BASIC" />
+          <database-version value="9.2" />
+          <driver-source value="BUNDLED" />
+          <driver-library value="" />
+          <driver value="" />
+          <url-type value="DATABASE" />
+          <host value="localhost" />
+          <port value="3306" />
+          <database value="restaurantmanagement" />
           <tns-folder value="" />
           <tns-profile value="" />
           <type value="USER_PASSWORD" />

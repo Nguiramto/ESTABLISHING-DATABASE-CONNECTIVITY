@@ -1,8 +1,12 @@
 package org.example;
 
 import javax.swing.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class Main extends JFrame {
+    private static Connection conn;
 
     public Main() {
         setTitle("Restaurant Management System");
@@ -10,8 +14,11 @@ public class Main extends JFrame {
         setSize(1000, 600);
         setLocationRelativeTo(null);
 
+        // Initialize Database Connection
+        conn = getDatabaseConnection();
+
         ActivityLogger logger = new ActivityLogger();
-        OrderController controller = new OrderController(logger);
+        OrderController controller = new OrderController(logger, conn); // Pass DB connection to controllers
 
         JTabbedPane tabbedPane = new JTabbedPane();
 
@@ -37,6 +44,24 @@ public class Main extends JFrame {
         });
 
         add(tabbedPane);
+    }
+
+    // Establish Database Connection
+    private static Connection getDatabaseConnection() {
+        String url = "jdbc:mysql://localhost:3306/restaurantmanagement";
+        String user = "root";
+        String password = "#FOcus2710#";
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection connection = DriverManager.getConnection(url, user, password);
+            System.out.println("Database connected successfully!");
+            return connection;
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Database connection failed!", "Error", JOptionPane.ERROR_MESSAGE);
+            return null;
+        }
     }
 
     public static void main(String[] args) {
