@@ -1,5 +1,6 @@
 package org.example;
 
+import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +14,7 @@ public class OrderController {
     private ActivityLogger logger;
 
     // Constructor
-    public OrderController(ActivityLogger logger) {
+    public OrderController(ActivityLogger logger, Connection conn) {
         this.logger = logger;
     }
 
