@@ -57,7 +57,7 @@ public class Main extends JFrame {
             Connection connection = DriverManager.getConnection(url, user, password);
             System.out.println("Database connected successfully!");
             return connection;
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
             JOptionPane.showMessageDialog(null, "Database connection failed!", "Error", JOptionPane.ERROR_MESSAGE);
             return null;

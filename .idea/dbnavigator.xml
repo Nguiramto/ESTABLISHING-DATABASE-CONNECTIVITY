@@ -56,6 +56,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
+      <object connection-id="67dd4d16-a876-490f-b279-80bde4d397eb" object-ref="schemas/restaurantmanagement/tables/orders" />
       <object connection-id="67dd4d16-a876-490f-b279-80bde4d397eb" object-ref="schemas/restaurantmanagement/tables/menu_items" />
       <object connection-id="67dd4d16-a876-490f-b279-80bde4d397eb" object-ref="schemas/restaurantmanagement/tables/order_items" />
     </open-files>
@@ -70,6 +71,7 @@
     <filter-actions connection-id="c9c48824-0a37-441c-9580-79d46a40e8cb" dataset="myrestaurantdb.activity_log" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="c9c48824-0a37-441c-9580-79d46a40e8cb" dataset="myrestaurantdb.order_items" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="67dd4d16-a876-490f-b279-80bde4d397eb" dataset="restaurantmanagement.menu_items" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="67dd4d16-a876-490f-b279-80bde4d397eb" dataset="restaurantmanagement.orders" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="67dd4d16-a876-490f-b279-80bde4d397eb" dataset="restaurantmanagement.order_items" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="67dd4d16-a876-490f-b279-80bde4d397eb" dataset="restaurantmanagement.transactions" active-filter-id="EMPTY_FILTER" />
   </component>
