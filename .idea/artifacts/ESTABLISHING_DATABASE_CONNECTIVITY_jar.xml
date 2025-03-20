@@ -1,0 +1,34 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ESTABLISHING-DATABASE-CONNECTIVITY:jar">
+    <output-path>$PROJECT_DIR$/../mysql-connector-j-9.2.0/mysql-connector-j-9.2.0</output-path>
+    <root id="archive" name="ESTABLISHING-DATABASE-CONNECTIVITY.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../mysql-connector-java-8.0.29/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="MainFrameManagement" />
+      <element id="module-test-output" name="MainFrameManagement" />
+      <element id="module-output" name="ActivityLoggerManagement" />
+      <element id="module-test-output" name="ActivityLoggerManagement" />
+      <element id="module-output" name="OrderController" />
+      <element id="module-test-output" name="OrderController" />
+      <element id="module-output" name="OrderTransactionManagement" />
+      <element id="module-test-output" name="OrderTransactionManagement" />
+      <element id="module-output" name="OrderItemManagement" />
+      <element id="module-test-output" name="OrderItemManagement" />
+      <element id="module-output" name="MenuPanelManagement" />
+      <element id="module-test-output" name="MenuPanelManagement" />
+      <element id="module-output" name="OrderPanelManagement" />
+      <element id="module-test-output" name="OrderPanelManagement" />
+      <element id="module-output" name="TransactionPanelManagement" />
+      <element id="module-test-output" name="TransactionPanelManagement" />
+      <element id="module-output" name="ActivityPanelManagemnt" />
+      <element id="module-test-output" name="ActivityPanelManagemnt" />
+      <element id="module-output" name="RevenuePanelManagement" />
+      <element id="module-test-output" name="RevenuePanelManagement" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../mysql-connector-j-9.2.0/mysql-connector-j-9.2.0/mysql-connector-j-9.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../mysql-connector-java-8.0.29/mysql-connector-java-8.0.29.jar" path-in-jar="/" />
+      <element id="library" level="project" name="mysql-connector-j-9.2.0" />
+      <element id="file-copy" path="$PROJECT_DIR$/../mysql-connector-java-8.0.29/mysql-connector-java-8.0.29.jar" />
+    </root>
+  </artifact>
+</component>
